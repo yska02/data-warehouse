@@ -1,0 +1,262 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="ccaaea58-9846-45cc-90a3-e3876c610ea5" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>SubscriptionTrFact</ID>
+  <Name>SubscriptionTrFact</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Dimensions>
+    <Dimension dwd:design-time-name="3e1899bc-2522-418e-b090-2f5a28d32d08">
+      <ID>Time Dimension</ID>
+      <Name>Time Dimension</Name>
+      <DimensionID>Time Dimension</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="5981789a-081e-4705-a14b-b28a91dd2943">
+          <AttributeID>Time Code</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="517eaf41-7ea7-4879-9cbf-7296f1a26663">
+          <AttributeID>Date</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="89385d45-b2ad-41db-bdfc-723358ced2ae">
+          <AttributeID>Month</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="d93d8cc4-031a-4529-8d19-bb09e0a51139">
+          <AttributeID>Quarter</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="31fffd41-5a2f-4cbd-b203-bb7ccac68a8b">
+          <AttributeID>Year</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="73b28bba-9a6f-40c2-83df-a7bd2ef74453">
+      <ID>Customer Dimension</ID>
+      <Name>Customer Dimension</Name>
+      <DimensionID>Customer Dimension</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="bad0edad-d706-4193-8b4d-88bc52785bb9">
+          <AttributeID>Customer Code</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="36bda44a-686c-4381-8799-4a63fe62fde8">
+          <AttributeID>Customer ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="1fe6cdae-10e1-4d0c-9888-f4c07a00e39f">
+          <AttributeID>Customer Name</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="fb8975f3-7f4b-4563-a027-a943b561bf2f">
+          <AttributeID>Customer Address</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="b9781861-8ffe-4d87-affb-8833a635c612">
+          <AttributeID>Customer Gender</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="ac54fc38-8ab4-4d1b-870d-53bed9ea9f7c">
+      <ID>Staff Dimension</ID>
+      <Name>Staff Dimension</Name>
+      <DimensionID>Staff Dimension</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="c30cb7a2-2768-4d07-9e0b-993bc1f3b724">
+          <AttributeID>Staff Code</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="5efa68d4-0112-41db-8975-90941f9a8961">
+          <AttributeID>Staff ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="8c791a02-9018-46fd-abd2-cb0b093d68ac">
+          <AttributeID>Staff Name</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="78c93fbd-9c59-4b1e-9d4d-fd8b5eb02937">
+          <AttributeID>Staff DOB</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="58edb862-75c8-458c-bcf2-12e2e1e490fc">
+          <AttributeID>Staff Salary</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="20b68992-ff8d-4f42-8756-5c314262294d">
+          <AttributeID>Staff Address</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="c64e1e3d-a15d-4741-8a2f-b593df3f0003">
+          <AttributeID>Valid From</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="a596e5b4-d90a-4991-add9-98bbc213301c">
+          <AttributeID>Valid To</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="9f53cebd-9c88-477b-b96f-883bccdf50dd">
+      <ID>Benefit Dimension</ID>
+      <Name>Benefit Dimension</Name>
+      <DimensionID>Benefit Dimension</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="22ac43e2-f056-4c11-8f67-f1c9d86cc572">
+          <AttributeID>Benefit Code</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+  </Dimensions>
+  <MeasureGroups>
+    <MeasureGroup dwd:design-time-name="c0dd88d9-4357-4c26-90b1-ef4a1ae0182f">
+      <ID>Subscription Tr Fact</ID>
+      <Name>Subscription Tr Fact</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="de48a927-b402-4a70-a819-abf13f31b6b0">
+          <ID>Total Subscription Earning</ID>
+          <Name>Total Subscription Earning</Name>
+          <Source dwd:design-time-name="3722fa7d-e052-4f3d-a5cc-88d8c85bf46f">
+            <DataType>BigInt</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="5e711f44-9ca8-416a-852a-5a9df9f83c84">
+              <TableID>dbo_SubscriptionTrFact</TableID>
+              <ColumnID>TotalSubscriptionEarning</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="b90dec88-0150-426c-accf-529ce99b1f6a">
+          <ID>Subscriber Count</ID>
+          <Name>Subscriber Count</Name>
+          <Source dwd:design-time-name="2578d48a-666c-499d-a045-c43768d07d09">
+            <DataType>BigInt</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="73262b1b-d324-4800-8c24-702b59ce7824">
+              <TableID>dbo_SubscriptionTrFact</TableID>
+              <ColumnID>SubscriberCount</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="38861551-9029-4eef-8bbe-c39d36199e49">
+          <ID>Subscription Tr Fact Count</ID>
+          <Name>Subscription Tr Fact Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="9c89f516-32e6-4212-9fb2-6f65e0a1e888">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="b15f41c8-dcc6-4b42-b822-01bbfd12cc07">
+              <TableID>dbo_SubscriptionTrFact</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="c59ea8f4-4409-4f02-bb3d-29834c97a5bd">
+          <CubeDimensionID>Time Dimension</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="7ac298b7-1b96-40ba-8c75-29d8cc211ab2">
+              <AttributeID>Time Code</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="d6b03cef-d3d8-421a-a345-ebbd1c58b946">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="e33114b9-da8f-40e8-853c-ae14a972151a">
+                    <TableID>dbo_SubscriptionTrFact</TableID>
+                    <ColumnID>TimeCode</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="87c00d5f-aec8-4323-9537-e88d13d9b9b4">
+          <CubeDimensionID>Customer Dimension</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="d6d3f0e1-b99f-406f-b59d-969e401cf3ea">
+              <AttributeID>Customer Code</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="f0e7fb76-fa9f-4a59-b967-46de1d65bba0">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="15ec983a-4543-42d4-a3ee-14293c4a5145">
+                    <TableID>dbo_SubscriptionTrFact</TableID>
+                    <ColumnID>CustomerCode</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="6af2cfaf-2bb4-4c9f-b4fa-9735fbe85b46">
+          <CubeDimensionID>Staff Dimension</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="e87fecc4-d0b0-49ba-91c0-a18b04437cef">
+              <AttributeID>Staff Code</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="7c511712-f442-47f2-a850-588e6aee81b6">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="decf6754-c51a-4cc2-b9a9-c03c92e51bb3">
+                    <TableID>dbo_SubscriptionTrFact</TableID>
+                    <ColumnID>StaffCode</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="8d9b977f-deb8-464e-bbb2-9e2e53f29a48">
+          <CubeDimensionID>Benefit Dimension</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="361b46de-5623-43c6-9782-6ecf4ec7fd5c">
+              <AttributeID>Benefit Code</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="9964ac07-72e6-4c89-90ed-68a7ff7d1531">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="cca0ab09-8d0e-40e7-ae43-f317cabc77fe">
+                    <TableID>dbo_SubscriptionTrFact</TableID>
+                    <ColumnID>BenefitCode</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+  </MeasureGroups>
+  <Source dwd:design-time-name="e6cf352c-7489-4a0d-bb86-7780492c8af9">
+    <DataSourceViewID>OLAP Hospital IE</DataSourceViewID>
+  </Source>
+</Cube>

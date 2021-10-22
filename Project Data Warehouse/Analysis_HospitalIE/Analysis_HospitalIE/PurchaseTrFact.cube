@@ -1,0 +1,265 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="46a99ca9-9514-404c-b172-8291c6ca9c35" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>PurchaseTrFact</ID>
+  <Name>PurchaseTrFact</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Dimensions>
+    <Dimension dwd:design-time-name="d11518b6-e994-4c8b-a324-b9a547d650bf">
+      <ID>Time Dimension</ID>
+      <Name>Time Dimension</Name>
+      <DimensionID>Time Dimension</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="af432321-15ff-4878-a511-a743e08e0928">
+          <AttributeID>Time Code</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="8dac6995-e790-4d87-bf79-c9fce73fcdfc">
+          <AttributeID>Date</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="aabdf77e-819b-4c82-a79b-5b62f8b1b750">
+          <AttributeID>Month</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="6bc4b18e-9845-4fce-910b-5a01eb27efc5">
+          <AttributeID>Quarter</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="31cc90c2-335a-48bd-8d5d-ed49fde3b0c4">
+          <AttributeID>Year</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="058870ce-3af9-481e-8d68-e890f07d7186">
+      <ID>Medicine Dimension</ID>
+      <Name>Medicine Dimension</Name>
+      <DimensionID>Medicine Dimension</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="c01e6c9e-6a35-46ee-a418-49ecbdb64ee9">
+          <AttributeID>Medicine Code</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="5e91f806-d324-4700-8817-b0065cff6adc">
+          <AttributeID>Medicine ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="72865978-3dad-4f8a-bbb6-e2b6b3296ffa">
+          <AttributeID>Medicine Name</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="6bfc1a93-d0ca-4d90-a67a-65f11f4a06d8">
+          <AttributeID>Medicine Expired Date</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="1691838a-1fb8-4d16-b839-dfb4142d92c9">
+          <AttributeID>Medicine Buying Price</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="f3f95a1e-fa28-4210-becd-6d163b05e8a2">
+          <AttributeID>Medicine Selling Price</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="35cf2d21-6c1f-415a-8654-5f8b78f8c445">
+      <ID>Staff Dimension</ID>
+      <Name>Staff Dimension</Name>
+      <DimensionID>Staff Dimension</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="031584ed-ae00-4603-b0b6-47e8034bfc98">
+          <AttributeID>Staff Code</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="35ea632a-3351-440a-800b-1eecbd9752ac">
+          <AttributeID>Staff ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="b0f6a9cd-88ec-4c52-ae98-c72ebad62a9c">
+          <AttributeID>Staff Name</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="ca4a1b5e-f00f-4ef8-9e54-52424b786f90">
+          <AttributeID>Staff DOB</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="ea58fdc9-a95f-427b-bc72-cf542081959d">
+          <AttributeID>Staff Salary</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="2e79eb33-463f-4478-85c0-e17fba0bf3df">
+          <AttributeID>Staff Address</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="bd66d630-23b2-4021-91bd-85a3bf896d3a">
+          <AttributeID>Valid From</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="980227f6-b80f-4235-af5b-fc968c5fb5c7">
+          <AttributeID>Valid To</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="1a74e126-9092-4da6-ae7d-77b94c1f77da">
+      <ID>Distributor Dimension</ID>
+      <Name>Distributor Dimension</Name>
+      <DimensionID>Distributor Dimension</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="f782c7e5-4a35-4e2e-8781-9c7b42245597">
+          <AttributeID>Distributor Code</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+  </Dimensions>
+  <MeasureGroups>
+    <MeasureGroup dwd:design-time-name="675c31f3-e418-44bb-a55b-698aceef27bf">
+      <ID>Purchase Tr Fact</ID>
+      <Name>Purchase Tr Fact</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="3ebfc4f6-6dbf-4e35-8c4e-954beac8ba67">
+          <ID>Total Purchase Cost</ID>
+          <Name>Total Purchase Cost</Name>
+          <Source dwd:design-time-name="b8c738fe-27a5-4b2b-bb1d-bb4e4271cb8a">
+            <DataType>BigInt</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="0d1b84c9-320c-43b6-b8bc-074e370ff8ee">
+              <TableID>dbo_PurchaseTrFact</TableID>
+              <ColumnID>TotalPurchaseCost</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="02d43bb6-2b97-4da9-97c2-8c0d305f4bc7">
+          <ID>Total Medicine Purchased</ID>
+          <Name>Total Medicine Purchased</Name>
+          <Source dwd:design-time-name="935f215c-80bb-4c7c-9362-c79a3d41348f">
+            <DataType>BigInt</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="6278f61a-7fea-4d4e-8c6a-a778f0c7bd1b">
+              <TableID>dbo_PurchaseTrFact</TableID>
+              <ColumnID>TotalMedicinePurchased</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="f388b399-b535-491a-8ee0-6d4062b0acf6">
+          <ID>Purchase Tr Fact Count</ID>
+          <Name>Purchase Tr Fact Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="b21b1304-a55b-4e0b-8ec8-5ebc88b4d2a9">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="a069921e-f508-4a55-b3a3-514bf31642ae">
+              <TableID>dbo_PurchaseTrFact</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="f06eb2c2-f96c-4549-9f35-3a29b8b97eef">
+          <CubeDimensionID>Time Dimension</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="d059a6b8-1f17-4f2d-a8af-d810884f8755">
+              <AttributeID>Time Code</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="b4ae15fa-7e8c-4c0f-9a1d-1f3b700f8450">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="152224c8-a44c-4631-829d-98d2acde508d">
+                    <TableID>dbo_PurchaseTrFact</TableID>
+                    <ColumnID>TimeCode</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="729eaf02-485c-4527-bc7a-c5d20dd14cb5">
+          <CubeDimensionID>Medicine Dimension</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="faee11e8-54e1-4976-8e6b-035af36dc257">
+              <AttributeID>Medicine Code</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="e9a86cbc-2315-4055-a2fd-132694eed994">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="077e4920-755f-43ed-ba6b-4d30a086a510">
+                    <TableID>dbo_PurchaseTrFact</TableID>
+                    <ColumnID>MedicineCode</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="b5b32ed2-38f9-4611-bac6-72835c7cd468">
+          <CubeDimensionID>Staff Dimension</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="4612aa73-df99-41c4-937b-d1c9bce9d0c8">
+              <AttributeID>Staff Code</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="7342d11e-d16e-4f21-99c5-08e2e10605bc">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="4faaa808-2ed7-4e4b-a41d-70cd16bec8ec">
+                    <TableID>dbo_PurchaseTrFact</TableID>
+                    <ColumnID>StaffCode</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="9f591935-c4bb-480e-8026-6ccd1dcef1d0">
+          <CubeDimensionID>Distributor Dimension</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="3e3dc82e-1f11-4b43-8e1a-442c67a4840b">
+              <AttributeID>Distributor Code</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="4a4e9623-eb2b-4676-ab3a-c919f9726fa8">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="d4073ad5-6dbb-4a2f-b773-46cb9d6717f8">
+                    <TableID>dbo_PurchaseTrFact</TableID>
+                    <ColumnID>DistributorCode</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+  </MeasureGroups>
+  <Source dwd:design-time-name="81c4b10f-0f22-40d4-8080-55ce343226a2">
+    <DataSourceViewID>OLAP Hospital IE</DataSourceViewID>
+  </Source>
+</Cube>

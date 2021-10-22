@@ -1,0 +1,131 @@
+﻿<DeploymentSnapshot xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <Target>
+    <Database>Analysis_HospitalIE</Database>
+    <Server>localhost</Server>
+    <ConnectionString>Data Source=localhost;Timeout=0</ConnectionString>
+  </Target>
+  <Options>
+    <TransactionalDeployment>false</TransactionalDeployment>
+    <PartitionDeployment>DeployPartitions</PartitionDeployment>
+    <RoleDeployment>DeployRolesRetainMembers</RoleDeployment>
+    <ProcessingOption>Default</ProcessingOption>
+    <OutputScript></OutputScript>
+    <ImpactAnalysisFile></ImpactAnalysisFile>
+    <ConfigurationSettingsDeployment>Deploy</ConfigurationSettingsDeployment>
+    <OptimizationSettingsDeployment>Deploy</OptimizationSettingsDeployment>
+    <WriteBackTableCreation>UseExisting</WriteBackTableCreation>
+  </Options>
+  <Snapshot>
+    <ObjectSnapshots>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.RelationalDataSource</Type>
+        <TimeStamp>rNiuaKOZ8uKY+s3TNZWx7amp1cI=1/15/2021 10:49:07 PM1/15/2021 10:49:07 PM</TimeStamp>
+        <ID>
+          <String>OLAP Hospital IE</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.DataSourceView</Type>
+        <TimeStamp>5InXKlsNOyQUoMbTdIbNXnoK1is=1/15/2021 10:50:36 PM1/15/2021 10:50:35 PM</TimeStamp>
+        <ID>
+          <String>OLAP Hospital IE</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>OubYaLlJiurAen/ZlC1QqaFA/nQ=1/15/2021 11:01:12 PM1/15/2021 10:56:04 PM</TimeStamp>
+        <ID>
+          <String>Time Dimension</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>x4m+xjECDoTebm28S16O8362gFU=1/15/2021 11:01:12 PM1/15/2021 10:56:05 PM</TimeStamp>
+        <ID>
+          <String>Medicine Dimension</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>oLfskUV3xsf6W6nVQBq4mDGnTCs=1/15/2021 11:01:12 PM1/15/2021 10:56:05 PM</TimeStamp>
+        <ID>
+          <String>Staff Dimension</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>QJ1QPJuQkKGKGlUOAf2MDIm39AY=1/15/2021 11:01:12 PM1/15/2021 10:56:05 PM</TimeStamp>
+        <ID>
+          <String>Customer Dimension</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>jTFHx7jUXLYreczJ5coU0mAYzlk=1/15/2021 11:05:16 PM1/15/2021 11:05:16 PM</TimeStamp>
+        <ID>
+          <String>Distributor Dimension</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>b+ulirDuHhrc0g95iLOCWNqvfoQ=1/15/2021 11:06:45 PM1/15/2021 11:06:45 PM</TimeStamp>
+        <ID>
+          <String>Benefit Dimension</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>UW+pb7OO/HvIkr3C7YT+nsIA2BM=1/15/2021 11:07:05 PM1/15/2021 11:07:05 PM</TimeStamp>
+        <ID>
+          <String>Treatment Dimension</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>vyWhVCMgAH8uBQLdeSDW9i+Ki14=1/15/2021 11:07:05 PM1/15/2021 11:07:05 PM</TimeStamp>
+        <ID>
+          <String>Doctor Dimension</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>gwalNOxqLkasXTVomi89aTC7swg=1/15/2021 11:01:12 PM1/15/2021 10:56:04 PMnoSv06QRDbyVtzFjWWnADq2JHrA=1/15/2021 10:56:05 PM1/15/2021 10:56:04 PM</TimeStamp>
+        <ID>
+          <String>SalesTrFact</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>C3NALPV2uEuq3TaRL3SLREDbChk=1/15/2021 11:06:15 PM1/15/2021 11:06:15 PMezumTgYUw2Dpv1+9AeRJe8meBng=1/15/2021 11:06:15 PM1/15/2021 11:06:15 PM</TimeStamp>
+        <ID>
+          <String>PurchaseTrFact</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>wdKx4T/u++7NbuUiSz6fk8HlEOQ=1/15/2021 11:06:45 PM1/15/2021 11:06:45 PM+yqKH6oaDHpm/6GQTkARTM0guwo=1/15/2021 11:06:45 PM1/15/2021 11:06:45 PM</TimeStamp>
+        <ID>
+          <String>SubscriptionTrFact</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>5rFTaUdrttMEJkj1Q2rXZSgNqzU=1/15/2021 11:07:05 PM1/15/2021 11:07:05 PMr/8u4AhIVPdD3b8vrrNEhSpt+RI=1/15/2021 11:07:05 PM1/15/2021 11:07:05 PM</TimeStamp>
+        <ID>
+          <String>ServiceTrFact</String>
+        </ID>
+      </ObjectSnapshot>
+    </ObjectSnapshots>
+    <DatabaseSnapshot>
+      <Type>Microsoft.AnalysisServices.Database</Type>
+      <TimeStamp>q+aD+90SSOFLrvurJN8yJhcB/+Q=1/15/2021 9:58:58 PM1/15/2021 9:58:58 PM</TimeStamp>
+      <ID>
+        <String>Analysis_HospitalIE</String>
+      </ID>
+    </DatabaseSnapshot>
+    <Granularity>Coarse</Granularity>
+  </Snapshot>
+  <AssemblyLocations />
+  <ProcessingComplete>true</ProcessingComplete>
+  <LastDeployed>2021-01-15T16:08:20.823333Z</LastDeployed>
+</DeploymentSnapshot>

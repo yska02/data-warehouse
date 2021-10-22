@@ -1,0 +1,358 @@
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="87ecc45d-e38b-4c86-84ef-248593224525" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>OLAP Hospital IE</ID>
+  <Name>OLAP Hospital IE</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+      <Value>_ALL_TABLES_</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:NameMatchingCriteria</Name>
+      <Value>1</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+      <Value></Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+      <Value>
+        <Layouts xmlns="">
+          <Diagram>
+            <Name>_ALL_TABLES_</Name>
+            <DiagramLayout />
+            <ShowRelationshipNames>False</ShowRelationshipNames>
+            <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+            <DiagramViewPortLeft>0</DiagramViewPortLeft>
+            <DiagramViewPortTop>0</DiagramViewPortTop>
+            <DiagramBoundingLeft>0</DiagramBoundingLeft>
+            <DiagramBoundingTop>0</DiagramBoundingTop>
+            <DiagramZoom>100</DiagramZoom>
+          </Diagram>
+        </Layouts>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <DataSourceID>OLAP Hospital IE</DataSourceID>
+  <Schema>
+    <xs:schema id="OLAP_x0020_Hospital_x0020_IE" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+      <xs:element name="OLAP_x0020_Hospital_x0020_IE" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="75b4c8b5-a961-425f-81e9-49f70208fb83">
+        <xs:complexType>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="dbo_BenefitDimension" msprop:design-time-name="e9d3fa9f-1d49-4f95-993b-14d4ac00bd03" msprop:DbTableName="BenefitDimension" msprop:FriendlyName="BenefitDimension" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="BenefitCode" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="d73b8c0c-40de-4733-9ec4-d9e03b56f5e2" msprop:DbColumnName="BenefitCode" msprop:FriendlyName="BenefitCode" type="xs:int" />
+                  <xs:element name="BenefitID" msprop:design-time-name="7ca489f8-7841-46cb-980d-6dddb6303159" msprop:DbColumnName="BenefitID" msprop:FriendlyName="BenefitID" type="xs:int" minOccurs="0" />
+                  <xs:element name="BenefitName" msprop:design-time-name="2afa0725-7b4f-480b-9ca3-def83ec3cffa" msprop:DbColumnName="BenefitName" msprop:FriendlyName="BenefitName" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="BenefitPrice" msprop:design-time-name="ce32723a-220d-4097-a1be-e7d4175584d2" msprop:DbColumnName="BenefitPrice" msprop:FriendlyName="BenefitPrice" type="xs:long" minOccurs="0" />
+                  <xs:element name="ValidFrom" msprop:design-time-name="900c1ec0-47bf-48cc-91ea-67e42c0ebf0f" msprop:DbColumnName="ValidFrom" msprop:FriendlyName="ValidFrom" type="xs:dateTime" minOccurs="0" />
+                  <xs:element name="ValidTo" msprop:design-time-name="39dfe362-c907-40dc-9088-476949a0f7be" msprop:DbColumnName="ValidTo" msprop:FriendlyName="ValidTo" type="xs:dateTime" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_CustomerDimension" msprop:design-time-name="fc722fa6-12d8-4614-a62f-bc686b7a3216" msprop:DbTableName="CustomerDimension" msprop:FriendlyName="CustomerDimension" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="CustomerCode" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="1cc96a6b-7842-4dd4-87b0-009486563ad0" msprop:DbColumnName="CustomerCode" msprop:FriendlyName="CustomerCode" type="xs:int" />
+                  <xs:element name="CustomerID" msprop:design-time-name="fb0a3481-fec4-4424-9220-66967dba2dea" msprop:DbColumnName="CustomerID" msprop:FriendlyName="CustomerID" type="xs:int" minOccurs="0" />
+                  <xs:element name="CustomerName" msprop:design-time-name="03962dec-8922-4f7c-8552-d1fcf38bfaa4" msprop:DbColumnName="CustomerName" msprop:FriendlyName="CustomerName" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="CustomerAddress" msprop:design-time-name="c79b298f-ce08-4b88-8dc5-f30f57a142e5" msprop:DbColumnName="CustomerAddress" msprop:FriendlyName="CustomerAddress" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="CustomerGender" msprop:design-time-name="0fe175c4-b6d7-44d4-930e-523048fdad0c" msprop:DbColumnName="CustomerGender" msprop:FriendlyName="CustomerGender" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="1" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_DistributorDimension" msprop:design-time-name="b7949abf-ab97-45b0-9721-35f954b5a0b4" msprop:DbTableName="DistributorDimension" msprop:FriendlyName="DistributorDimension" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="DistributorCode" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="8f5f9e86-b14a-47db-b24f-dd9045476c6d" msprop:DbColumnName="DistributorCode" msprop:FriendlyName="DistributorCode" type="xs:int" />
+                  <xs:element name="DistributorID" msprop:design-time-name="4ee3963c-6850-472a-ba0c-72190ef2a412" msprop:DbColumnName="DistributorID" msprop:FriendlyName="DistributorID" type="xs:int" minOccurs="0" />
+                  <xs:element name="DistributorName" msprop:design-time-name="e7d0989b-8ce0-4678-bec3-322c12f586ae" msprop:DbColumnName="DistributorName" msprop:FriendlyName="DistributorName" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="DistributorAddress" msprop:design-time-name="13964bb3-4478-4b3d-a12f-5824ea8f5c76" msprop:DbColumnName="DistributorAddress" msprop:FriendlyName="DistributorAddress" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="DistributorCityName" msprop:design-time-name="f67d303e-c977-4fdf-9499-cf53e344da49" msprop:DbColumnName="DistributorCityName" msprop:FriendlyName="DistributorCityName" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="DistributorPhone" msprop:design-time-name="deee9d79-e502-4fe9-b311-ec197ab6c2af" msprop:DbColumnName="DistributorPhone" msprop:FriendlyName="DistributorPhone" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_DoctorDimension" msprop:design-time-name="a913e458-3da1-4686-a4b3-62cc47cae609" msprop:DbTableName="DoctorDimension" msprop:FriendlyName="DoctorDimension" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="DoctorCode" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="b764cb3e-1e1a-4d70-a72e-b8d9571df56f" msprop:DbColumnName="DoctorCode" msprop:FriendlyName="DoctorCode" type="xs:int" />
+                  <xs:element name="DoctorID" msprop:design-time-name="d6c72738-a978-451a-ba37-850cfd533d2c" msprop:DbColumnName="DoctorID" msprop:FriendlyName="DoctorID" type="xs:int" minOccurs="0" />
+                  <xs:element name="DoctorName" msprop:design-time-name="67cf058e-a2b0-45da-9b03-63d33e4f598a" msprop:DbColumnName="DoctorName" msprop:FriendlyName="DoctorName" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="DoctorDOB" msprop:design-time-name="3a5cb004-2a39-40bd-8c20-f32a926abf39" msprop:DbColumnName="DoctorDOB" msprop:FriendlyName="DoctorDOB" type="xs:dateTime" minOccurs="0" />
+                  <xs:element name="DoctorSalary" msprop:design-time-name="2c5e4ec3-4e5b-4130-95d5-f8996d6de9dd" msprop:DbColumnName="DoctorSalary" msprop:FriendlyName="DoctorSalary" type="xs:long" minOccurs="0" />
+                  <xs:element name="DoctorAddress" msprop:design-time-name="74baf551-3b51-4bc0-bf40-b144fd75fa6f" msprop:DbColumnName="DoctorAddress" msprop:FriendlyName="DoctorAddress" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="ValidFrom" msprop:design-time-name="bc7abcc8-6571-465e-8d84-f609becf88a2" msprop:DbColumnName="ValidFrom" msprop:FriendlyName="ValidFrom" type="xs:dateTime" minOccurs="0" />
+                  <xs:element name="ValidTo" msprop:design-time-name="97534159-3695-4ed8-a6f1-fe559f7a5f05" msprop:DbColumnName="ValidTo" msprop:FriendlyName="ValidTo" type="xs:dateTime" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_FilterTimeStamp" msprop:design-time-name="f38d4c9b-c36f-4162-aa64-a4129c92adf0" msprop:DbTableName="FilterTimeStamp" msprop:FriendlyName="FilterTimeStamp" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="TableName" msprop:design-time-name="a9ea7ddc-33ca-4966-b3e0-13107fcd8586" msprop:DbColumnName="TableName" msprop:FriendlyName="TableName">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="LastETL" msprop:design-time-name="e4eae1d7-91a0-48af-8743-ad12e818ba07" msprop:DbColumnName="LastETL" msprop:FriendlyName="LastETL" type="xs:dateTime" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_MedicineDimension" msprop:design-time-name="45f952b9-521e-44f5-92f0-af77b29442f8" msprop:DbTableName="MedicineDimension" msprop:FriendlyName="MedicineDimension" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="MedicineCode" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="c707f5d2-c010-4f6c-a761-57c5850ccc7e" msprop:DbColumnName="MedicineCode" msprop:FriendlyName="MedicineCode" type="xs:int" />
+                  <xs:element name="MedicineID" msprop:design-time-name="ca12bf0a-d96f-4cf8-a4a7-7f738b7f69c9" msprop:DbColumnName="MedicineID" msprop:FriendlyName="MedicineID" type="xs:int" minOccurs="0" />
+                  <xs:element name="MedicineName" msprop:design-time-name="cfe502a0-4966-4543-810b-ca7ae92a7c9a" msprop:DbColumnName="MedicineName" msprop:FriendlyName="MedicineName" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="MedicineExpiredDate" msprop:design-time-name="ead8bdda-0152-43b4-8d22-b15b485aa550" msprop:DbColumnName="MedicineExpiredDate" msprop:FriendlyName="MedicineExpiredDate" type="xs:dateTime" minOccurs="0" />
+                  <xs:element name="MedicineBuyingPrice" msprop:design-time-name="ebe99fdd-9910-41d1-94b7-e70f3540f82c" msprop:DbColumnName="MedicineBuyingPrice" msprop:FriendlyName="MedicineBuyingPrice" type="xs:long" minOccurs="0" />
+                  <xs:element name="MedicineSellingPrice" msprop:design-time-name="cb2086da-236e-4d30-ba86-7ceb2edf4410" msprop:DbColumnName="MedicineSellingPrice" msprop:FriendlyName="MedicineSellingPrice" type="xs:long" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_PurchaseTrFact" msprop:design-time-name="2665b3b4-528b-459e-bf09-0ac3adbb7012" msprop:DbTableName="PurchaseTrFact" msprop:FriendlyName="PurchaseTrFact" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="TimeCode" msprop:design-time-name="b22214f3-86de-4313-9a45-3cfb3b8ad15c" msprop:DbColumnName="TimeCode" msprop:FriendlyName="TimeCode" type="xs:int" minOccurs="0" />
+                  <xs:element name="MedicineCode" msprop:design-time-name="65394d81-d167-4432-b39a-de5c50f05a67" msprop:DbColumnName="MedicineCode" msprop:FriendlyName="MedicineCode" type="xs:int" minOccurs="0" />
+                  <xs:element name="StaffCode" msprop:design-time-name="2bcecbc0-af53-42b5-a854-11cb8f074c78" msprop:DbColumnName="StaffCode" msprop:FriendlyName="StaffCode" type="xs:int" minOccurs="0" />
+                  <xs:element name="DistributorCode" msprop:design-time-name="af29817a-d25f-4e74-a7b6-a011834c8ba6" msprop:DbColumnName="DistributorCode" msprop:FriendlyName="DistributorCode" type="xs:int" minOccurs="0" />
+                  <xs:element name="TotalPurchaseCost" msprop:design-time-name="4f9ca2ca-f167-4c5b-965d-03e2897c8df4" msprop:DbColumnName="TotalPurchaseCost" msprop:FriendlyName="TotalPurchaseCost" type="xs:long" minOccurs="0" />
+                  <xs:element name="TotalMedicinePurchased" msprop:design-time-name="ed09d2b7-22e4-4295-9538-f972671764e0" msprop:DbColumnName="TotalMedicinePurchased" msprop:FriendlyName="TotalMedicinePurchased" type="xs:long" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_SalesTrFact" msprop:design-time-name="93abc4d0-2d64-4ae5-87e9-0e4a37b3712c" msprop:DbTableName="SalesTrFact" msprop:FriendlyName="SalesTrFact" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="TimeCode" msprop:design-time-name="a45e4921-951a-4ed6-94e4-294e71713f46" msprop:DbColumnName="TimeCode" msprop:FriendlyName="TimeCode" type="xs:int" minOccurs="0" />
+                  <xs:element name="MedicineCode" msprop:design-time-name="2b4148f7-197b-404d-93ab-16f6eb1b7256" msprop:DbColumnName="MedicineCode" msprop:FriendlyName="MedicineCode" type="xs:int" minOccurs="0" />
+                  <xs:element name="StaffCode" msprop:design-time-name="13fcb533-7d19-41f6-98de-4c7adc4a8bff" msprop:DbColumnName="StaffCode" msprop:FriendlyName="StaffCode" type="xs:int" minOccurs="0" />
+                  <xs:element name="CustomerCode" msprop:design-time-name="0117e1d2-3db0-4da1-a6bb-8ce6a815d4df" msprop:DbColumnName="CustomerCode" msprop:FriendlyName="CustomerCode" type="xs:int" minOccurs="0" />
+                  <xs:element name="TotalSalesEarning" msprop:design-time-name="7f7413ba-b259-4257-ac2a-68a3d35469fc" msprop:DbColumnName="TotalSalesEarning" msprop:FriendlyName="TotalSalesEarning" type="xs:long" minOccurs="0" />
+                  <xs:element name="TotalMedicineSold" msprop:design-time-name="0a9feaf4-f917-4b00-9c36-63fd4121959f" msprop:DbColumnName="TotalMedicineSold" msprop:FriendlyName="TotalMedicineSold" type="xs:long" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_ServiceTrFact" msprop:design-time-name="27481b28-1dae-4e29-aec4-11431c444d93" msprop:DbTableName="ServiceTrFact" msprop:FriendlyName="ServiceTrFact" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="TimeCode" msprop:design-time-name="bb5a6088-ae49-40fa-98f7-9f8995f6e1bf" msprop:DbColumnName="TimeCode" msprop:FriendlyName="TimeCode" type="xs:int" minOccurs="0" />
+                  <xs:element name="CustomerCode" msprop:design-time-name="9483342f-0cdb-4beb-9953-e970b24c5b97" msprop:DbColumnName="CustomerCode" msprop:FriendlyName="CustomerCode" type="xs:int" minOccurs="0" />
+                  <xs:element name="TreatmentCode" msprop:design-time-name="8dae57e7-a10c-41e7-9c01-097d992abbed" msprop:DbColumnName="TreatmentCode" msprop:FriendlyName="TreatmentCode" type="xs:int" minOccurs="0" />
+                  <xs:element name="DoctorCode" msprop:design-time-name="582a8071-9ff1-467e-818f-83d3dca8c324" msprop:DbColumnName="DoctorCode" msprop:FriendlyName="DoctorCode" type="xs:int" minOccurs="0" />
+                  <xs:element name="TotalServiceEarning" msprop:design-time-name="5c1439c3-749c-4a10-98b0-801dfbb7fe95" msprop:DbColumnName="TotalServiceEarning" msprop:FriendlyName="TotalServiceEarning" type="xs:long" minOccurs="0" />
+                  <xs:element name="NumberOfDoctor" msprop:design-time-name="d4ae84a1-4ce5-4c3f-9bd7-8847bfeee79d" msprop:DbColumnName="NumberOfDoctor" msprop:FriendlyName="NumberOfDoctor" type="xs:long" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_StaffDimension" msprop:design-time-name="af7999fe-3254-4956-b6cc-52ad883ba289" msprop:DbTableName="StaffDimension" msprop:FriendlyName="StaffDimension" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="StaffCode" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="5ef03799-de3f-4e99-bf77-5619798f1f71" msprop:DbColumnName="StaffCode" msprop:FriendlyName="StaffCode" type="xs:int" />
+                  <xs:element name="StaffID" msprop:design-time-name="625aa9d6-38bb-4a1c-853e-bbdeb95e0bdf" msprop:DbColumnName="StaffID" msprop:FriendlyName="StaffID" type="xs:int" minOccurs="0" />
+                  <xs:element name="StaffName" msprop:design-time-name="353d56a4-8d7f-4b99-8035-6b3a8eb6f567" msprop:DbColumnName="StaffName" msprop:FriendlyName="StaffName" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="StaffDOB" msprop:design-time-name="3236e2d1-73b5-4aab-94ee-6eb6b94df2f6" msprop:DbColumnName="StaffDOB" msprop:FriendlyName="StaffDOB" type="xs:dateTime" minOccurs="0" />
+                  <xs:element name="StaffSalary" msprop:design-time-name="5d050a8d-bccd-417f-a144-b40b40ffe13b" msprop:DbColumnName="StaffSalary" msprop:FriendlyName="StaffSalary" type="xs:long" minOccurs="0" />
+                  <xs:element name="StaffAddress" msprop:design-time-name="c2bb4a88-2b00-4528-839b-3b7a56cbd37b" msprop:DbColumnName="StaffAddress" msprop:FriendlyName="StaffAddress" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="ValidFrom" msprop:design-time-name="95692cae-cf12-484b-a713-b43798d11f31" msprop:DbColumnName="ValidFrom" msprop:FriendlyName="ValidFrom" type="xs:dateTime" minOccurs="0" />
+                  <xs:element name="ValidTo" msprop:design-time-name="3b85c29d-c0be-440e-ba8b-cf2149849ea0" msprop:DbColumnName="ValidTo" msprop:FriendlyName="ValidTo" type="xs:dateTime" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_SubscriptionTrFact" msprop:design-time-name="4425dfc8-529f-4f61-9bd0-50b5039c4ce5" msprop:DbTableName="SubscriptionTrFact" msprop:FriendlyName="SubscriptionTrFact" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="TimeCode" msprop:design-time-name="6c357b71-a57b-4bbe-889a-44c14b9189a7" msprop:DbColumnName="TimeCode" msprop:FriendlyName="TimeCode" type="xs:int" minOccurs="0" />
+                  <xs:element name="CustomerCode" msprop:design-time-name="86d48aff-c7b7-4a57-85eb-4fb3b7bfcb49" msprop:DbColumnName="CustomerCode" msprop:FriendlyName="CustomerCode" type="xs:int" minOccurs="0" />
+                  <xs:element name="StaffCode" msprop:design-time-name="ee3d61e6-88f8-4e57-a2ba-96fbccd00cc2" msprop:DbColumnName="StaffCode" msprop:FriendlyName="StaffCode" type="xs:int" minOccurs="0" />
+                  <xs:element name="BenefitCode" msprop:design-time-name="c9f2c1c5-a856-429c-9285-bc054841db9d" msprop:DbColumnName="BenefitCode" msprop:FriendlyName="BenefitCode" type="xs:int" minOccurs="0" />
+                  <xs:element name="TotalSubscriptionEarning" msprop:design-time-name="34fc5b12-ac40-4a25-be9e-1407c98bf05f" msprop:DbColumnName="TotalSubscriptionEarning" msprop:FriendlyName="TotalSubscriptionEarning" type="xs:long" minOccurs="0" />
+                  <xs:element name="SubscriberCount" msprop:design-time-name="68349fa3-e62f-4cb9-9df5-0d7f656f8a2d" msprop:DbColumnName="SubscriberCount" msprop:FriendlyName="SubscriberCount" type="xs:long" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_TimeDimension" msprop:design-time-name="15de154d-a78b-45c8-a58e-250fdd3cbcef" msprop:DbTableName="TimeDimension" msprop:FriendlyName="TimeDimension" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="TimeCode" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="08548be0-f8bd-49d4-9bec-360d4373e071" msprop:DbColumnName="TimeCode" msprop:FriendlyName="TimeCode" type="xs:int" />
+                  <xs:element name="Date" msprop:design-time-name="456cb74e-5387-49d8-981f-e758367a44b0" msprop:DbColumnName="Date" msprop:FriendlyName="Date" type="xs:dateTime" minOccurs="0" />
+                  <xs:element name="Month" msprop:design-time-name="97b0cc8d-6084-413d-9b6c-075670a04562" msprop:DbColumnName="Month" msprop:FriendlyName="Month" type="xs:int" minOccurs="0" />
+                  <xs:element name="Quarter" msprop:design-time-name="c21d114c-bb29-483c-a8f4-fc9c94c8680a" msprop:DbColumnName="Quarter" msprop:FriendlyName="Quarter" type="xs:int" minOccurs="0" />
+                  <xs:element name="Year" msprop:design-time-name="26b43b85-b234-4a35-9848-f333786a602c" msprop:DbColumnName="Year" msprop:FriendlyName="Year" type="xs:int" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_TreatmentDimension" msprop:design-time-name="5c1860e1-59da-4b94-beb8-05ee83948821" msprop:DbTableName="TreatmentDimension" msprop:FriendlyName="TreatmentDimension" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="TreatmentCode" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="bf1ca2ef-72b6-4368-9d71-59fc15aa8f4f" msprop:DbColumnName="TreatmentCode" msprop:FriendlyName="TreatmentCode" type="xs:int" />
+                  <xs:element name="TreatmentID" msprop:design-time-name="cce32d12-3c7f-489d-8721-2fd2d5a200ac" msprop:DbColumnName="TreatmentID" msprop:FriendlyName="TreatmentID" type="xs:int" minOccurs="0" />
+                  <xs:element name="TreatmentName" msprop:design-time-name="9044b22a-e3e7-4a16-b684-5e72cd22653f" msprop:DbColumnName="TreatmentName" msprop:FriendlyName="TreatmentName" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="TreatmentPrice" msprop:design-time-name="58318fb3-6891-4a36-a961-607d739bd8a0" msprop:DbColumnName="TreatmentPrice" msprop:FriendlyName="TreatmentPrice" type="xs:long" minOccurs="0" />
+                  <xs:element name="ValidFrom" msprop:design-time-name="80ff453c-13e8-462f-8c90-f8d07f08a101" msprop:DbColumnName="ValidFrom" msprop:FriendlyName="ValidFrom" type="xs:dateTime" minOccurs="0" />
+                  <xs:element name="ValidTo" msprop:design-time-name="b7f1ea1e-eca1-4b5d-9815-d7ef627fc492" msprop:DbColumnName="ValidTo" msprop:FriendlyName="ValidTo" type="xs:dateTime" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+        <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_BenefitDimension" />
+          <xs:field xpath="BenefitCode" />
+        </xs:unique>
+        <xs:unique name="dbo_CustomerDimension_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_CustomerDimension" />
+          <xs:field xpath="CustomerCode" />
+        </xs:unique>
+        <xs:unique name="dbo_DistributorDimension_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_DistributorDimension" />
+          <xs:field xpath="DistributorCode" />
+        </xs:unique>
+        <xs:unique name="dbo_DoctorDimension_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_DoctorDimension" />
+          <xs:field xpath="DoctorCode" />
+        </xs:unique>
+        <xs:unique name="dbo_FilterTimeStamp_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_FilterTimeStamp" />
+          <xs:field xpath="TableName" />
+        </xs:unique>
+        <xs:unique name="dbo_MedicineDimension_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_MedicineDimension" />
+          <xs:field xpath="MedicineCode" />
+        </xs:unique>
+        <xs:unique name="dbo_StaffDimension_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_StaffDimension" />
+          <xs:field xpath="StaffCode" />
+        </xs:unique>
+        <xs:unique name="dbo_TimeDimension_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_TimeDimension" />
+          <xs:field xpath="TimeCode" />
+        </xs:unique>
+        <xs:unique name="dbo_TreatmentDimension_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_TreatmentDimension" />
+          <xs:field xpath="TreatmentCode" />
+        </xs:unique>
+      </xs:element>
+      <xs:annotation>
+        <xs:appinfo>
+          <msdata:Relationship name="PurchaseTrFact-TimeDimension" msdata:parent="dbo_TimeDimension" msdata:child="dbo_PurchaseTrFact" msdata:parentkey="TimeCode" msdata:childkey="TimeCode" />
+          <msdata:Relationship name="PurchaseTrFact-MedicineDimension" msdata:parent="dbo_MedicineDimension" msdata:child="dbo_PurchaseTrFact" msdata:parentkey="MedicineCode" msdata:childkey="MedicineCode" />
+          <msdata:Relationship name="PurchaseTrFact-StaffDimension" msdata:parent="dbo_StaffDimension" msdata:child="dbo_PurchaseTrFact" msdata:parentkey="StaffCode" msdata:childkey="StaffCode" />
+          <msdata:Relationship name="PurchaseTrFact-DistributorDimension" msdata:parent="dbo_DistributorDimension" msdata:child="dbo_PurchaseTrFact" msdata:parentkey="DistributorCode" msdata:childkey="DistributorCode" />
+          <msdata:Relationship name="SalesTrFact-TimeDimension" msdata:parent="dbo_TimeDimension" msdata:child="dbo_SalesTrFact" msdata:parentkey="TimeCode" msdata:childkey="TimeCode" />
+          <msdata:Relationship name="SalesTrFact-MedicineDimension" msdata:parent="dbo_MedicineDimension" msdata:child="dbo_SalesTrFact" msdata:parentkey="MedicineCode" msdata:childkey="MedicineCode" />
+          <msdata:Relationship name="SalesTrFact-StaffDimension" msdata:parent="dbo_StaffDimension" msdata:child="dbo_SalesTrFact" msdata:parentkey="StaffCode" msdata:childkey="StaffCode" />
+          <msdata:Relationship name="SalesTrFact-CustomerDimension" msdata:parent="dbo_CustomerDimension" msdata:child="dbo_SalesTrFact" msdata:parentkey="CustomerCode" msdata:childkey="CustomerCode" />
+          <msdata:Relationship name="ServiceTrFact-TimeDimension" msdata:parent="dbo_TimeDimension" msdata:child="dbo_ServiceTrFact" msdata:parentkey="TimeCode" msdata:childkey="TimeCode" />
+          <msdata:Relationship name="ServiceTrFact-CustomerDimension" msdata:parent="dbo_CustomerDimension" msdata:child="dbo_ServiceTrFact" msdata:parentkey="CustomerCode" msdata:childkey="CustomerCode" />
+          <msdata:Relationship name="ServiceTrFact-TreatmentDimension" msdata:parent="dbo_TreatmentDimension" msdata:child="dbo_ServiceTrFact" msdata:parentkey="TreatmentCode" msdata:childkey="TreatmentCode" />
+          <msdata:Relationship name="ServiceTrFact-DoctorDimension" msdata:parent="dbo_DoctorDimension" msdata:child="dbo_ServiceTrFact" msdata:parentkey="DoctorCode" msdata:childkey="DoctorCode" />
+          <msdata:Relationship name="SubscriptionTrFact-TimeDimension" msdata:parent="dbo_TimeDimension" msdata:child="dbo_SubscriptionTrFact" msdata:parentkey="TimeCode" msdata:childkey="TimeCode" />
+          <msdata:Relationship name="SubscriptionTrFact-CustomerDimension" msdata:parent="dbo_CustomerDimension" msdata:child="dbo_SubscriptionTrFact" msdata:parentkey="CustomerCode" msdata:childkey="CustomerCode" />
+          <msdata:Relationship name="SubscriptionTrFact-StaffDimension" msdata:parent="dbo_StaffDimension" msdata:child="dbo_SubscriptionTrFact" msdata:parentkey="StaffCode" msdata:childkey="StaffCode" />
+          <msdata:Relationship name="SubscriptionTrFact-BenefitDimension" msdata:parent="dbo_BenefitDimension" msdata:child="dbo_SubscriptionTrFact" msdata:parentkey="BenefitCode" msdata:childkey="BenefitCode" />
+        </xs:appinfo>
+      </xs:annotation>
+    </xs:schema>
+    <OLAP_x0020_Hospital_x0020_IE xmlns="" />
+  </Schema>
+</DataSourceView>

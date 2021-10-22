@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30413.136
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{D2ABAB84-BF74-430A-B69E-9DC6D40DDA17}") = "Analysis_HospitalIE", "Analysis_HospitalIE\Analysis_HospitalIE.dwproj", "{70DF91A2-E6DD-4B05-84A9-0DA37C56A61E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{70DF91A2-E6DD-4B05-84A9-0DA37C56A61E}.Development|Default.ActiveCfg = Development
+		{70DF91A2-E6DD-4B05-84A9-0DA37C56A61E}.Development|Default.Build.0 = Development
+		{70DF91A2-E6DD-4B05-84A9-0DA37C56A61E}.Development|Default.Deploy.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F88EE707-C00A-41B8-9D6B-7F21A0C836DF}
+	EndGlobalSection
+EndGlobal

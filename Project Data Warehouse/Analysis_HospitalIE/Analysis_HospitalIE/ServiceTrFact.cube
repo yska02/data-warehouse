@@ -1,0 +1,241 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="2223de17-b0e1-47bc-92dc-982d0a223ecd" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>ServiceTrFact</ID>
+  <Name>ServiceTrFact</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Dimensions>
+    <Dimension dwd:design-time-name="a460b69b-e983-4049-b0a2-be23baf58e4a">
+      <ID>Time Dimension</ID>
+      <Name>Time Dimension</Name>
+      <DimensionID>Time Dimension</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="4178e1b5-5d33-42d9-8f24-b2134e65aa00">
+          <AttributeID>Time Code</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="8a2d2e54-a760-4830-b698-f5ebd1ed018a">
+          <AttributeID>Date</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="65de8073-5bef-47ff-9120-4412bb40568d">
+          <AttributeID>Month</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="5d8622a0-e040-4173-95b9-41fd238091aa">
+          <AttributeID>Quarter</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="3efec2d0-6397-49a7-9cb6-f66739d30c6a">
+          <AttributeID>Year</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="ea943d7c-c657-4b80-87dc-f4eb3d17986c">
+      <ID>Customer Dimension</ID>
+      <Name>Customer Dimension</Name>
+      <DimensionID>Customer Dimension</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="98b356a5-901c-4200-96d0-13908bd5c009">
+          <AttributeID>Customer Code</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="2bb97382-80ea-44a4-89b7-f80edf319736">
+          <AttributeID>Customer ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="cce65f5a-aa3b-4d2e-bb9e-ad24c78902e6">
+          <AttributeID>Customer Name</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="27c6856b-26a2-42bb-9888-ff50d05e4a58">
+          <AttributeID>Customer Address</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="db58fa18-0041-457a-bd3e-b9759e17cf11">
+          <AttributeID>Customer Gender</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="26ade72c-eefa-496e-90b5-ed21fb83806b">
+      <ID>Treatment Dimension</ID>
+      <Name>Treatment Dimension</Name>
+      <DimensionID>Treatment Dimension</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="bf38804b-076c-4345-92ec-d3b7b6ff780c">
+          <AttributeID>Treatment Code</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="a4d2cfca-6600-46a5-8c02-14038524a0d7">
+      <ID>Doctor Dimension</ID>
+      <Name>Doctor Dimension</Name>
+      <DimensionID>Doctor Dimension</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="e00f2ebc-a8af-4caa-8060-a159f57e81fa">
+          <AttributeID>Doctor Code</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+  </Dimensions>
+  <MeasureGroups>
+    <MeasureGroup dwd:design-time-name="86cbcaa8-63a0-49fc-a9b7-3d67a90a9dca">
+      <ID>Service Tr Fact</ID>
+      <Name>Service Tr Fact</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="086bba01-0a14-4714-b482-befa24d400d3">
+          <ID>Total Service Earning</ID>
+          <Name>Total Service Earning</Name>
+          <Source dwd:design-time-name="d3dabafa-ff2c-4d2c-8be1-c1ce7108dc5e">
+            <DataType>BigInt</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="8d4d08f5-8cbb-4432-af2e-e5e1fca39dbe">
+              <TableID>dbo_ServiceTrFact</TableID>
+              <ColumnID>TotalServiceEarning</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="12698095-cd29-4675-a29d-eea5b3ee8009">
+          <ID>Number Of Doctor</ID>
+          <Name>Number Of Doctor</Name>
+          <Source dwd:design-time-name="aad0e040-25f7-4ca9-97ee-c6f60a12e7ef">
+            <DataType>BigInt</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="fd8e4121-5a4a-4f15-acb9-1189299ff4fd">
+              <TableID>dbo_ServiceTrFact</TableID>
+              <ColumnID>NumberOfDoctor</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="ea3f5e4a-f428-47b6-a508-430d6565c7ac">
+          <ID>Service Tr Fact Count</ID>
+          <Name>Service Tr Fact Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="c17b23ae-6d1e-4467-8983-1526cdfc7fb7">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="bb911b0a-df54-469d-a2ee-95a84936085b">
+              <TableID>dbo_ServiceTrFact</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="f4970966-b1f8-4c10-ab12-104ec595b4b6">
+          <CubeDimensionID>Time Dimension</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="6cd580ce-73c3-4673-b023-42de72113899">
+              <AttributeID>Time Code</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="59333896-fb75-4365-b454-87ce1a073228">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="490e8612-f420-4393-bc3b-3ab437df86dd">
+                    <TableID>dbo_ServiceTrFact</TableID>
+                    <ColumnID>TimeCode</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="48f73f3f-eb5c-4a3a-a690-8553101eb62a">
+          <CubeDimensionID>Customer Dimension</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="d2f1f580-da87-404c-bba2-ed778fd85c5a">
+              <AttributeID>Customer Code</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="13442dc4-ca58-468d-86c4-01c7b372e897">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="1eebeefc-ec61-45ec-bc76-00976558bd4b">
+                    <TableID>dbo_ServiceTrFact</TableID>
+                    <ColumnID>CustomerCode</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="f10308ad-de3d-4172-bc5e-f1632abdba7c">
+          <CubeDimensionID>Treatment Dimension</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="aaacf892-0406-43b8-b065-e9eca3158603">
+              <AttributeID>Treatment Code</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="7676d509-80aa-44dd-b43b-b88e9f8d0d6d">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="f5e0ef70-89b9-4bc9-a26d-75ec5222c426">
+                    <TableID>dbo_ServiceTrFact</TableID>
+                    <ColumnID>TreatmentCode</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="44e4e054-927c-40ec-99e0-096ef0360747">
+          <CubeDimensionID>Doctor Dimension</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="5cf90ebe-a726-436a-9890-5b8fbb55235d">
+              <AttributeID>Doctor Code</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="7e94bd72-214e-4e8e-bb29-655f6ba7b76c">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="8a1172f9-7941-4422-a839-ef2be0698634">
+                    <TableID>dbo_ServiceTrFact</TableID>
+                    <ColumnID>DoctorCode</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+  </MeasureGroups>
+  <Source dwd:design-time-name="b2ab4001-a00b-49b6-a783-a53358b1610d">
+    <DataSourceViewID>OLAP Hospital IE</DataSourceViewID>
+  </Source>
+</Cube>
